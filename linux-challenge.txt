@@ -1,0 +1,137 @@
+Rethabile Thulo
+
+
+Task 1: Basic Task
+
+
+1.recruit@umuzi-recruit:~$ ls
+
+2.recruit@umuzi-recruit:~$ pwd
+
+3.recruit@umuzi-recruit:~$ mkdir workspace
+mkdir: cannot create directory ‘workspace’: File exists
+recruit@umuzi-recruit:~$ cd ~/workspace
+
+4.recruit@umuzi-recruit:~/workspace$ ls
+
+5.recruit@umuzi-recruit:~/workspace$ touch README.md
+
+6.recruit@umuzi-recruit:~/workspace$ cp README.md CHANGELOG.md
+ 
+
+1.I see a list of files or directories in the directory.
+2.I see the present working directory.
+
+
+
+
+Task 2: Absolute And Relative Paths
+
+
+
+recruit@umuzi-recruit:~$ touch exercise.md
+recruit@umuzi-recruit:~$ ls
+recruit@umuzi-recruit:~$ mv exercise.md /tmp/
+recruit@umuzi-recruit:~$ ls
+recruit@umuzi-recruit:~$ rm -f
+recruit@umuzi-recruit:~$ ls
+
+
+
+
+Task 3: cat command
+
+
+1.recruit@umuzi-recruit:~$ touch umuzi.md recruits.md cohort.md
+recruit@umuzi-recruit:~$ ls
+
+2.recruit@umuzi-recruit:~$ cat umuzi.md
+The Mub experience was very interesting and I learnt a lot.
+recruit@umuzi-recruit:~$ cat recruits.md
+I enjoyed doing the interviews during the MUB.
+recruit@umuzi-recruit:~$ cat cohort.md
+Everyone was really friendly during the interviews and it helped a lot because they gave us all the information we needed for MUB.
+
+3.recruit@umuzi-recruit:~$ cat umuzi.md recruits.md cohort.md
+The Mub experience was very interesting and I learnt a lot.
+I enjoyed doing the interviews during the MUB.
+Everyone was really friendly during the interviews and it helped a lot because they gave us all the information we needed for MUB.
+recruit@umuzi-recruit:~$ cat umuzi.md cohort.md recruits.md
+The Mub experience was very interesting and I learnt a lot.
+Everyone was really friendly during the interviews and it helped a lot because they gave us all the information we needed for MUB.
+I enjoyed doing the interviews during the MUB.
+
+4.recruit@umuzi-recruit:~$ cat umuzi.md cohort.md recruits.md >summary.md
+
+5.recruit@umuzi-recruit:~$ echo "The End" >>summary.md
+recruit@umuzi-recruit:~$ ls
+
+
+
+
+Task 4: The locate command
+
+
+
+1.recruit@umuzi-recruit:~$ locate umuzi
+
+2.recruit@umuzi-recruit:~$ locate umuzi >search_result.md
+recruit@umuzi-recruit:~$ ls
+ 
+
+
+
+
+Task 5: The location command cont..
+
+
+1.recruit@umuzi-recruit:~$ cp pad.md Documents
+
+2.recruit@umuzi-recruit:~$ cd ~/Desktop
+recruit@umuzi-recruit:~/Desktop$ touch work
+
+3.recruit@umuzi-recruit:~/Desktop$ cp pad.md pad_copy.md
+
+4.recruit@umuzi-recruit:~/Desktop$ locate updatedb
+/
+
+5.recruit@umuzi-recruit:~/Desktop$ cd -
+
+6.recruit@umuzi-recruit:~$ locate pad_copy.md
+
+
+
+
+Task 6: Find commands
+
+
+1.recruit@umuzi-recruit:~$ find -name *.pdf
+
+
+2.recruit@umuzi-recruit:~$ find -name *.pdf > search_results 
+recruit@umuzi-recruit:~$ ls
+recruit@umuzi-recruit:~$ cat search_results
+recruit@umuzi-recruit:~$ cp search_results r
+recruit@umuzi-recruit:~$ cp search_results ~/Documents 
+recruit@umuzi-recruit:~$ cd Documents
+recruit@umuzi-recruit:~/Documents$ ls
+
+3.recruit@umuzi-recruit:~$ find . -type f -newermt 2020/01/17 -ls
+
+
+
+Task 7 : Text Editor
+
+
+1.recruit@umuzi-recruit:~$ nano my_bio.md
+
+2.ctrl+x y enter
+
+3.recruit@umuzi-recruit:~$ mv my_bio.md my_files
+recruit@umuzi-recruit:~$ ls
+
+
+
+
+
+
